@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Computadoras</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; }
+        header { background: #0b2545; color: white; padding: 15px; text-align: center; font-size: 24px; }
+        nav { background: #3d5a80; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 10px; text-decoration: none; padding: 10px; display: inline-block; }
+        .main-container { display: flex; padding: 20px; }
+        aside { width: 25%; background: #f4f4f4; padding: 15px; }
+        .content { width: 75%; padding: 15px; }
+        footer { background: #0b2545; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+        
+        #botonSaludo {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #botonSaludo:hover {
+            background-color: #0056b3;
+        }
+
+        .respuesta {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Empresa de Transportes - Movil Bus
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Rutas.html">Rutas</a>
+        <a href="Precios.html">Precios</a>
+        <a href="Sedes.html">Sedes</a>
+    </nav>
+    
+    <div class="main-container">
+        <aside>
+            <h3>Servicios:</h3>
+            <ul>
+                <li><a href="#">Horario de Atención</a></li>
+                <li><a href="Rutas.html">Rutas</a></li>
+                <li><a href="Precios.html">Precios</a></li>
+                <li><a href="Sedes.html">Sedes</a></li>
+            </ul>
+        </aside>
+        
+        <div class="content">
+            <h1>Bienvenido a la Empresa de Transportes - Movil Bus</h1>
+            <p>Encuentra el mejor precio para viajar cómodo y seguro.</p>
+            <button id="botonSaludo">Haz clic para saludar</button>
+            <p class="respuesta"></p>
+            <script src="bton.js"></script>
+            <img src ="img/vipcar-autocar-post.jpg">
+
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2025 Empresa de Transportes - Movil Bus - Todos los derechos reservados.
+    </footer>
+</body>
+</html>
